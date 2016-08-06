@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DegreePlans</title>
+
+		<!-- Bower Dependencies -->
+		<script src="js/jquery.min.js"></script>
+
+		<!-- Application Files -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<script src="js/master.min.js"></script>
+	</head>
+	<body>
+		
+		<header>
+			<div class="container">
+				<img src="images/logo.png" height="50px" >
+			</div>
+		</header>
+
+		<section id="student-info">
+			<div class="container">
+				<h2>Student Name</h2>
+
+				<div class="column-4">
+					<b>College:</b> School of Engineering <br>
+					<b>Major:</b> Computer Engineering <br>
+				</div>
+
+				<div class="column-4">
+					
+					<b>Catalog Year</b>: Fall 2014 <br>
+					<b>Current Track Term:</b> Spring 2015
+				</div>
+
+				<div class="column-4">
+					<b>Academic Standing:</b> Good Standing <br>
+					<b>GPA</b>: 3.64
+				</div>	
+			</div>
+
+			<div class="container" id="student-progress">
+				<b>Student Progress:</b><span>Behind <i class="fa fa-exclamation-circle"></i>
+				<div id="progress-bar-bg"></div>
+				<div id="progress-bar"></div>
+			</div>
+		</section>
+
+		<section id="legend" class="container">
+			Completed: <i class="fa fa-check-circle completed"></i>
+			Completed Late: <i class="fa fa-check-circle late"></i>
+			Extra Course: <i class="fa fa-check-circle extra"></i>
+			Not Completed: <i class="fa fa-times-circle notcomplete"></i>
+		</section>
+
+		<section id="tracking">
+			<div class="term container">
+				<h3>Term 1</h3>
+				<span>1-15 Hours</span>
+				<div class="column-8">
+					<table width="100%" class="tracking-table">
+						<tr class="table-heading">
+							<th>Requirement</th>
+							<th>Status</th>
+							<th>Course</th>
+							<th>Grade</th>
+							<th>Hours</th>
+							<th>Term Taken</th>
+						<tr>
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2014</td>
+						</tr>
+						<tr class="even">
+							<td>Course 2</td>
+							<td><i class="fa fa-times-circle notcomplete"></i></td>
+							<td>Course 1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Course 3</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2014</td>
+						</tr>
+						<tr class="even">
+							<td>Course 4</td>
+							<td><i class="fa fa-check-circle late"></i></td>
+							<td>Course 1</td>
+							<td>B</td>
+							<td>3</td>
+							<td>Spring 2015</td>
+						</tr>
+						<tr>
+							<td>Course 5</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>B</td>
+							<td>3</td>
+							<td>Fall 2014</td>
+						</tr>
+						<tr>
+							<td>Course 6</td>
+							<td><i class="fa fa-check-circle extra"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>1</td>
+							<td>Fall 2014</td>
+						</tr>
+					</table>
+				</div>
+				<div class="notes column-4">
+					<table width="100%" class="notes-table">
+						<tr class="table-heading">
+							<th>Notes</th>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="term container">
+				<h3>Term 2</h3>
+				<span>15-30 Hours</span>
+				<div class="column-8">
+					<table width="100%" class="tracking-table">
+						<tr class="table-heading">
+							<th>Requirement</th>
+							<th>Status</th>
+							<th>Course</th>
+							<th>Grade</th>
+							<th>Hours</th>
+							<th>Term Taken</th>
+						<tr>
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2011</td>
+						</tr>
+						<tr class="even">
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2011</td>
+						</tr>
+						<tr>
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2011</td>
+						</tr>
+						<tr class="even">
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2011</td>
+						</tr>
+						<tr>
+							<td>Course 1</td>
+							<td><i class="fa fa-check-circle completed"></i></td>
+							<td>Course 1</td>
+							<td>A</td>
+							<td>3</td>
+							<td>Fall 2011</td>
+						</tr>
+					</table>
+				</div>
+				<div class="notes column-4">
+					<table width="100%" class="notes-table">
+						<tr class="table-heading">
+							<th>Notes</th>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
